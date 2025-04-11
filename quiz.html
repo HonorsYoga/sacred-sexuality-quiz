@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sacred Sexuality Quiz</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; background-color: #fff4f8; }
+    .container { max-width: 600px; margin: auto; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .button-group { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; }
+    .btn-main {
+      background-color: #e91e63;
+      color: white;
+      padding: 14px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn-main:hover {
+      background-color: #c2185b;
+    }
+  </style>
+</head>
+<body>
+
+<div id="quiz-container" class="container" style="display:none;">
+  <h3 id="question-text"></h3>
+  <div class="button-group">
+    <button class="btn-main" onclick="submitAnswer('yes')">Yes</button>
+    <button class="btn-main" onclick="submitAnswer('no')">No</button>
+  </div>
+</div>
+
+<script src="quiz.js"></script>
+</body>
+</html>
